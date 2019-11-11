@@ -53,84 +53,10 @@ class HomeVC: UIViewController {
     @IBOutlet var t2_label: [UILabel]!
 
     var actions = [ButtonAction]()
-    var vCircleCenterX: NSLayoutConstraint! = nil
-
-    let now: () -> Double = { Date.timeIntervalSinceReferenceDate }
-    private var displayLink: CADisplayLink?
-
-    var start1: TimeInterval! = nil
-    var term1: TimeInterval! = nil
-    var isEnd1: Bool = false
-    var start2: TimeInterval! = nil
-    var term2: TimeInterval! = nil
-    var isEnd2: Bool = false
-
-    func aniStart() {
-        displayLink = CADisplayLink(target: self, selector: #selector(update))
-        displayLink?.add(to: .main, forMode: .common)
-        start1 = now(); start2 = now()
-        term1 = 4     ; term2 = 2
-        isEnd1 = false; isEnd2 = false
-    }
-
-    @objc func update() { ani1(); ani2() }
-
-    func ani1() {
-        guard !isEnd1 else { return }
-        let rate = min(1.0, (now() - start1) / term1)
-        if rate == 1.0 { isEnd1 = true }
-        vCircle.center = CGPoint.init(x: 500.0 * rate, y: 100)
-    }
-    func ani2() {
-        guard !isEnd2 else { return }
-        let rate = min(1.0, (now() - start2) / term2)
-        if rate == 1.0 { isEnd2 = true }
-        vCircle.alpha = CGFloat(1.0 - rate)
-    }
-
-    let vCircle = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-
-        vCircle.backgroundColor = .red
-        vCircle.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        vCircle.center = CGPoint.init(x: 0, y: 100)
-
-        self.view.addSubview(vCircle)
-//        aniStart()
-
-        looper.invoke { dsl in
-            dsl.time = 4
-            dsl.block = { item in
-                self.vCircle.center = CGPoint.init(x: 500.0 * item.rate, y: 100)
-            }
-        }
-        looper.invoke { dsl in
-            dsl.time = 2
-            dsl.block = { item in
-                self.vCircle.alpha = CGFloat(1.0 - item.rate)
-            }
-        }
-
-//        let circlePath = UIBezierPath(
-//            arcCenter: CGPoint(x: 100, y: 100),
-//            radius: 50,
-//            startAngle: 0,
-//            endAngle: .pi * 2,
-//            clockwise: true
-//        )
-//
-//        let animation = CAKeyframeAnimation(keyPath: #keyPath(CALayer.position))
-//        animation.duration = 1
-//        animation.path = circlePath.cgPath
-//        animation.fillMode = .forwards
-//        animation.isRemovedOnCompletion = false
-
-//        vCircle.layer.add(animation, forKey: nil)
-
 
         t1_label.forEach { $0.alpha = 0 }
         t2_label.forEach { $0.alpha = 0 }
