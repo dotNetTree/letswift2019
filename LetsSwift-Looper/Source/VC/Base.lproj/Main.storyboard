@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q3h-fT-Zzv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dsb-Ag-JVD">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Q3h-fT-Zzv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a1c-O4-HnM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TTL-DV-ZV0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGu-Zx-iNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="135"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="LetsSwift_Looper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOO-jO-5pI">
+                                <rect key="frame" x="0.0" y="114" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="PyO-Z4-lu4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cib-Ey-Rbe">
+                                <rect key="frame" x="52" y="84" width="27.5" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yl3-es-xIa">
+                                <rect key="frame" x="79.5" y="84" width="25.5" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtc-zp-tAE">
+                                <rect key="frame" x="105" y="84" width="15" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="`" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrp-xS-ULg">
+                                <rect key="frame" x="120" y="84" width="15" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU9-dV-ljT">
+                                <rect key="frame" x="135" y="84" width="30.5" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="w" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-on-eaD">
+                                <rect key="frame" x="165.5" y="84" width="35.5" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTt-j3-3lv">
+                                <rect key="frame" x="201" y="84" width="13" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ir-yy-5ni">
+                                <rect key="frame" x="214" y="84" width="15" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUx-KR-UPy">
+                                <rect key="frame" x="229" y="84" width="15" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3g-Cc-hwA" userLabel="2">
+                                <rect key="frame" x="258" y="84" width="26" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyc-rW-lPY">
+                                <rect key="frame" x="284" y="84" width="26" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCi-Cm-jh2">
+                                <rect key="frame" x="310" y="84" width="26" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rb-Ci-0rj">
+                                <rect key="frame" x="336" y="84" width="26" height="61"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-hG-fyG">
+                                <rect key="frame" x="52" y="114" width="310" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2Kb-be-G4x"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99r-uH-dNn">
+                                <rect key="frame" x="166" y="149" width="136.5" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LooperAlience" translatesAutoresizingMaskIntoConstraints="NO" id="Bdz-2A-F1i">
+                                        <rect key="frame" x="-56" y="-7" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="QoE-v1-c1d"/>
+                                            <constraint firstAttribute="height" constant="50" id="gci-ce-YnO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cT-Uj-Uhb">
+                                        <rect key="frame" x="0.0" y="-2" width="24.5" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f8-kD-kbG">
+                                        <rect key="frame" x="24.5" y="-2" width="24.5" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-vn-iay">
+                                        <rect key="frame" x="49" y="-2" width="24.5" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="p" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceM-Ld-ePW">
+                                        <rect key="frame" x="73.5" y="-2" width="24.5" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dc-Da-qSZ">
+                                        <rect key="frame" x="98" y="-2" width="22.5" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1P-0L-6My">
+                                        <rect key="frame" x="120.5" y="-2" width="16" height="54"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6Dc-Da-qSZ" firstAttribute="leading" secondItem="ceM-Ld-ePW" secondAttribute="trailing" id="2Dm-up-h5u"/>
+                                    <constraint firstAttribute="trailing" secondItem="p1P-0L-6My" secondAttribute="trailing" id="7ST-DU-Ypw"/>
+                                    <constraint firstItem="ceM-Ld-ePW" firstAttribute="leading" secondItem="V3S-vn-iay" secondAttribute="trailing" id="K3o-xM-aL3"/>
+                                    <constraint firstItem="p1P-0L-6My" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" id="M1P-uz-DTw"/>
+                                    <constraint firstItem="8f8-kD-kbG" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" id="Pa2-7L-amd"/>
+                                    <constraint firstItem="2cT-Uj-Uhb" firstAttribute="leading" secondItem="Bdz-2A-F1i" secondAttribute="trailing" constant="6" id="ROq-2t-xGp"/>
+                                    <constraint firstItem="V3S-vn-iay" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" id="SLV-4p-4Xa"/>
+                                    <constraint firstItem="2cT-Uj-Uhb" firstAttribute="leading" secondItem="99r-uH-dNn" secondAttribute="leading" id="V7m-xN-RTz"/>
+                                    <constraint firstItem="6Dc-Da-qSZ" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" id="WPU-76-YSc"/>
+                                    <constraint firstAttribute="height" constant="50" id="ajh-dH-uwp"/>
+                                    <constraint firstItem="ceM-Ld-ePW" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" id="cBj-Uz-69i"/>
+                                    <constraint firstItem="p1P-0L-6My" firstAttribute="leading" secondItem="6Dc-Da-qSZ" secondAttribute="trailing" id="jen-NZ-So3"/>
+                                    <constraint firstItem="8f8-kD-kbG" firstAttribute="leading" secondItem="2cT-Uj-Uhb" secondAttribute="trailing" id="lVd-zW-WjK"/>
+                                    <constraint firstItem="2cT-Uj-Uhb" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" id="oiy-YL-KCq"/>
+                                    <constraint firstItem="V3S-vn-iay" firstAttribute="leading" secondItem="8f8-kD-kbG" secondAttribute="trailing" id="s7R-1M-6dm"/>
+                                    <constraint firstItem="Bdz-2A-F1i" firstAttribute="centerY" secondItem="99r-uH-dNn" secondAttribute="centerY" constant="-7" id="zMo-dj-f99"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.0" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kOO-jO-5pI" secondAttribute="trailing" id="0DI-bl-OaQ"/>
+                            <constraint firstItem="QCi-Cm-jh2" firstAttribute="leading" secondItem="cyc-rW-lPY" secondAttribute="trailing" id="3wI-wG-c0N"/>
+                            <constraint firstItem="cyc-rW-lPY" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="4cd-ez-17b"/>
+                            <constraint firstItem="kOO-jO-5pI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="70R-QL-uF7"/>
+                            <constraint firstItem="7Rb-Ci-0rj" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="7p0-eP-kqg"/>
+                            <constraint firstItem="aJo-hG-fyG" firstAttribute="leading" secondItem="Cib-Ey-Rbe" secondAttribute="leading" id="8nj-hw-8iq"/>
+                            <constraint firstItem="yl3-es-xIa" firstAttribute="leading" secondItem="Cib-Ey-Rbe" secondAttribute="trailing" id="9GL-HQ-Fh0"/>
+                            <constraint firstItem="gtc-zp-tAE" firstAttribute="leading" secondItem="yl3-es-xIa" secondAttribute="trailing" id="Eng-Wg-ItZ"/>
+                            <constraint firstItem="5Ir-yy-5ni" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="FEF-z7-PSd"/>
+                            <constraint firstItem="DXg-on-eaD" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="FvB-gZ-CBi"/>
+                            <constraint firstItem="aJo-hG-fyG" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="GPG-Cu-PDV"/>
+                            <constraint firstItem="cyc-rW-lPY" firstAttribute="leading" secondItem="j3g-Cc-hwA" secondAttribute="trailing" id="Gez-4c-gJG"/>
+                            <constraint firstItem="gtc-zp-tAE" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="JUd-XV-z44"/>
+                            <constraint firstItem="7Rb-Ci-0rj" firstAttribute="leading" secondItem="QCi-Cm-jh2" secondAttribute="trailing" id="KJD-LA-GFi"/>
+                            <constraint firstItem="QCi-Cm-jh2" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="KUN-v5-k5j"/>
+                            <constraint firstItem="99r-uH-dNn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="L4K-0J-5Tz"/>
+                            <constraint firstItem="pUx-KR-UPy" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="L8q-pu-3oM"/>
+                            <constraint firstItem="aJo-hG-fyG" firstAttribute="centerX" secondItem="kOO-jO-5pI" secondAttribute="centerX" id="Nz1-GB-4wz"/>
+                            <constraint firstItem="aJo-hG-fyG" firstAttribute="trailing" secondItem="7Rb-Ci-0rj" secondAttribute="trailing" id="Ohj-ne-ox9"/>
+                            <constraint firstItem="j3g-Cc-hwA" firstAttribute="leading" secondItem="pUx-KR-UPy" secondAttribute="trailing" constant="14" id="UrG-zB-u8N"/>
+                            <constraint firstItem="hrp-xS-ULg" firstAttribute="leading" secondItem="gtc-zp-tAE" secondAttribute="trailing" id="V2Q-0G-iU4"/>
+                            <constraint firstItem="kOO-jO-5pI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="YVB-00-c0Y"/>
+                            <constraint firstItem="tTt-j3-3lv" firstAttribute="leading" secondItem="DXg-on-eaD" secondAttribute="trailing" id="b4T-g2-pJp"/>
+                            <constraint firstItem="iU9-dV-ljT" firstAttribute="leading" secondItem="hrp-xS-ULg" secondAttribute="trailing" id="cqL-iy-Kgu"/>
+                            <constraint firstItem="pUx-KR-UPy" firstAttribute="leading" secondItem="5Ir-yy-5ni" secondAttribute="trailing" id="ffh-nr-Tj2"/>
+                            <constraint firstItem="DXg-on-eaD" firstAttribute="leading" secondItem="iU9-dV-ljT" secondAttribute="trailing" id="gyk-Bn-ThP"/>
+                            <constraint firstItem="99r-uH-dNn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" constant="27" id="jri-9k-SA3"/>
+                            <constraint firstItem="Cib-Ey-Rbe" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="mp3-T3-Lay"/>
+                            <constraint firstItem="j3g-Cc-hwA" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="njZ-8C-V9z"/>
+                            <constraint firstItem="5Ir-yy-5ni" firstAttribute="leading" secondItem="tTt-j3-3lv" secondAttribute="trailing" id="qBs-E8-tzO"/>
+                            <constraint firstItem="hrp-xS-ULg" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="qCa-vn-ADl"/>
+                            <constraint firstItem="yl3-es-xIa" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="xic-qE-qwp"/>
+                            <constraint firstItem="tTt-j3-3lv" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="yUp-6W-ihc"/>
+                            <constraint firstItem="iU9-dV-ljT" firstAttribute="centerY" secondItem="kOO-jO-5pI" secondAttribute="centerY" id="yWk-0W-poC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7bX-UZ-Nj0"/>
+                    <connections>
+                        <outlet property="t2_iv" destination="Bdz-2A-F1i" id="3dd-Dl-X5C"/>
+                        <outlet property="t2_iv_trailing" destination="ROq-2t-xGp" id="tlG-93-plI"/>
+                        <outletCollection property="t1_centerY" destination="mp3-T3-Lay" collectionClass="NSMutableArray" id="Qce-b9-OJe"/>
+                        <outletCollection property="t1_centerY" destination="xic-qE-qwp" collectionClass="NSMutableArray" id="UPN-m8-bwQ"/>
+                        <outletCollection property="t1_centerY" destination="JUd-XV-z44" collectionClass="NSMutableArray" id="QhY-Yr-szD"/>
+                        <outletCollection property="t1_centerY" destination="qCa-vn-ADl" collectionClass="NSMutableArray" id="0AV-8T-3z7"/>
+                        <outletCollection property="t1_centerY" destination="yWk-0W-poC" collectionClass="NSMutableArray" id="zu4-Mi-DMe"/>
+                        <outletCollection property="t1_centerY" destination="FvB-gZ-CBi" collectionClass="NSMutableArray" id="RTk-BA-TUm"/>
+                        <outletCollection property="t1_centerY" destination="yUp-6W-ihc" collectionClass="NSMutableArray" id="pDT-4l-lW9"/>
+                        <outletCollection property="t1_centerY" destination="FEF-z7-PSd" collectionClass="NSMutableArray" id="yND-Mb-efB"/>
+                        <outletCollection property="t1_centerY" destination="L8q-pu-3oM" collectionClass="NSMutableArray" id="qDt-5q-kce"/>
+                        <outletCollection property="t1_centerY" destination="njZ-8C-V9z" collectionClass="NSMutableArray" id="HWe-NM-Ial"/>
+                        <outletCollection property="t1_centerY" destination="4cd-ez-17b" collectionClass="NSMutableArray" id="IDq-Y8-1qe"/>
+                        <outletCollection property="t1_centerY" destination="KUN-v5-k5j" collectionClass="NSMutableArray" id="Euo-Bu-hmA"/>
+                        <outletCollection property="t1_centerY" destination="7p0-eP-kqg" collectionClass="NSMutableArray" id="Bm1-b9-Dnu"/>
+                        <outletCollection property="t1_label" destination="Cib-Ey-Rbe" collectionClass="NSMutableArray" id="kVu-6L-LZV"/>
+                        <outletCollection property="t1_label" destination="yl3-es-xIa" collectionClass="NSMutableArray" id="neS-wh-0JP"/>
+                        <outletCollection property="t1_label" destination="gtc-zp-tAE" collectionClass="NSMutableArray" id="D1N-mz-ojf"/>
+                        <outletCollection property="t1_label" destination="hrp-xS-ULg" collectionClass="NSMutableArray" id="Vkt-Dz-132"/>
+                        <outletCollection property="t1_label" destination="iU9-dV-ljT" collectionClass="NSMutableArray" id="85z-dh-phl"/>
+                        <outletCollection property="t1_label" destination="DXg-on-eaD" collectionClass="NSMutableArray" id="R5b-3k-a9v"/>
+                        <outletCollection property="t1_label" destination="tTt-j3-3lv" collectionClass="NSMutableArray" id="jZR-oz-EbA"/>
+                        <outletCollection property="t1_label" destination="5Ir-yy-5ni" collectionClass="NSMutableArray" id="74A-lr-IOX"/>
+                        <outletCollection property="t1_label" destination="pUx-KR-UPy" collectionClass="NSMutableArray" id="hRr-Iv-fSM"/>
+                        <outletCollection property="t1_label" destination="j3g-Cc-hwA" collectionClass="NSMutableArray" id="NqD-bg-J5O"/>
+                        <outletCollection property="t1_label" destination="cyc-rW-lPY" collectionClass="NSMutableArray" id="fTf-Fy-UqI"/>
+                        <outletCollection property="t1_label" destination="QCi-Cm-jh2" collectionClass="NSMutableArray" id="JIi-pa-sgc"/>
+                        <outletCollection property="t1_label" destination="7Rb-Ci-0rj" collectionClass="NSMutableArray" id="8ck-1b-GGv"/>
+                        <outletCollection property="t2_label" destination="2cT-Uj-Uhb" collectionClass="NSMutableArray" id="TBf-f7-Gza"/>
+                        <outletCollection property="t2_label" destination="8f8-kD-kbG" collectionClass="NSMutableArray" id="FpC-c7-lmE"/>
+                        <outletCollection property="t2_label" destination="V3S-vn-iay" collectionClass="NSMutableArray" id="d3z-Xc-0r3"/>
+                        <outletCollection property="t2_label" destination="ceM-Ld-ePW" collectionClass="NSMutableArray" id="KOM-dF-iqT"/>
+                        <outletCollection property="t2_label" destination="6Dc-Da-qSZ" collectionClass="NSMutableArray" id="ARz-wy-rb7"/>
+                        <outletCollection property="t2_label" destination="p1P-0L-6My" collectionClass="NSMutableArray" id="JU2-FA-fRW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59.420289855072468" y="135.26785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LooperAlience" width="200" height="200"/>
+    </resources>
+</document>
